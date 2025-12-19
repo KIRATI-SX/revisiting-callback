@@ -8,7 +8,14 @@
 */
 
 // Start Coding Here
+function sendNotification(operation){
+    return operation();
+}
 
+const postCreated=()=> `📝 แจ้งเตือน: โพสต์ของคุณถูกสร้างสำเร็จ!`;
+const postLiked=()=> `💬 แจ้งเตือน: มีคนมาคอมเมนต์ในโพสต์ของคุณ!`;
+const postCommented=()=> `📝 แจ้งเตือน: โพสต์ของคุณถูกสร้างสำเร็จ!`;
+const postShared=()=> `🔄 แจ้งเตือน: มีคนแชร์โพสต์ของคุณ!`;
 
 // เมื่อ function นี้ทำงานจะเห็นผลลัพธ์ดังนี้
 console.log(sendNotification(postCreated));   // 📝 แจ้งเตือน: โพสต์ของคุณถูกสร้างสำเร็จ!
